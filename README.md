@@ -13,9 +13,7 @@ A 9x9 grid split into 9 3x3 subgrids is called a Sudoku puzzle. The goal is to u
 
 3. Verify Validity: Determine whether the number is still valid in its present location. This entails verifying that the number for the current row, column, and 3x3 subgrid does not deviate from the Sudoku rules.
 
-4. Recursion
-
-Call the same function repeatedly in an attempt to fill the remaining grid spaces if the number is valid.
+4. Recursion: Call the same function repeatedly in an attempt to fill the remaining grid spaces if the number is valid.
 Return true if it is possible to successfully fill the grid.
 Try the next number and reset the cell (backtrack) if entering the number doesn't result in a solution.
 
