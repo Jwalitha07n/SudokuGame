@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+    animation: gradientBG 10s infinite;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    background-size: 200% 200%;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(80, 114, 154, 0.8);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+#logo img {
+    width: 50px;
+}
+
+#name {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.Heading {
+    font-size: 2em;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.sudoku_grid {
+    display: grid;
+    grid-template-columns: repeat(9, 60px);
+    grid-template-rows: repeat(9, 60px);
+    gap: 2px;
+    margin: 10px auto;
+}
+
+.sudoku_grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+.box1 {
+    background-color: rgb(131, 153, 216);
+}
+
+.box2 {
+    background-color: rgb(212, 140, 178);
+}
+
+.box3 {
+    background-color: #72c4c9;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Buttons button:hover {
+    background-color: #555;
+}
+
+/* Borders */
+.bl {
+    border-left: 4px solid #333;
+}
+
+.bb {
+    border-bottom: 4px solid #333;
+}
+
+.br {
+    border-right: 4px solid #333;
+}
+
+.bt {
+    border-top: 4px solid #333;
+}
