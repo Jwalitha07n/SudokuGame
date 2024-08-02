@@ -1,5 +1,5 @@
 # SudokuGame
-One of the algorithmic approach to solve the Sudoku puzzle is by using backtracking and recursion.
+One of the algorithmic approaches to solve the Sudoku puzzle is by using backtracking and recursion.
 # Overview of Sudoku Puzzles
 A 9x9 grid split into 9 3x3 subgrids is called a Sudoku puzzle. The goal is to use the following guidelines to fill the grid with numbers ranging from 1 to 9:
 
